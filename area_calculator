@@ -1,0 +1,73 @@
+ This program is an Area Calculator that lets you choose from a set of shapes and 
+# then using the equation of that shape gives you the area.
+
+# Created by Jaxson A.
+# January 1st, 2025
+
+import math
+
+side = 0.0
+length = 0.0
+width = 0.0
+height = 0.0
+base = 0.0
+radius = 0.0
+
+print("==================")
+print("Area Calculator 📐")
+print("==================")
+print("\n")
+
+print("1. Square")
+print("2. Rectangle")
+print("3. Triangle")
+print("4. Circle")
+print("5. Quit")
+print("\n")
+
+shape = int(input('Which shape: '))
+
+# 1. Square
+if shape == 1:
+    print('\n')
+    side = int(input('side: '))
+    area = side ** 2
+    print('\n')
+    print('The area is:', area)
+
+# 2. Rectangle
+elif shape == 2:
+    print('\n')
+    length = int(input('Length: '))
+    width = int(input('width: '))
+    area = length * width
+    print('\n')
+    print('The area is:', area)
+
+# 3. Triangle
+elif shape == 3:
+    print('\n')
+    height = int(input('Height: '))
+    base = int(input('Base: '))
+    area = (height * base)/2
+    print('\n')
+    print('The area is:', area)
+
+# 4. Circle
+elif shape == 4:
+    print('\n')
+    radius = int(input('Radius: '))
+    area = math.pi * radius ** 2
+    print('\n')
+    print('The area is:', area)
+
+# 5. Quit
+elif shape == 5:
+    print('\n')
+    print('Exiting program ...')
+    quit()
+
+# Invalid Answer
+else:
+    print("Invalid number.")
+    
